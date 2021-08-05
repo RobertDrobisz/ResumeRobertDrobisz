@@ -1,0 +1,23 @@
+@use '../node_modules/normalize.css/normalize';
+
+@use 'variables' as var;
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-color: hsl(var.$color-primary, var.$color-saturation, 95%);
+}
+
+h1 {
+	font-size: 5em;
+}
+
+h2 {
+	font-size: 3em;
+}

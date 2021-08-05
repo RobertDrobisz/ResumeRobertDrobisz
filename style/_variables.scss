@@ -1,0 +1,13 @@
+$breakpoints: (
+	//   mobile: 0,
+	'tablet': 480px,
+	'laptop': 768px,
+	'desktop': 1000px,
+	'hd': 1200px,
+	'fullhd': 1900px
+);
+
+$color-primary: 230;
+$color-saturation: 100%;
+$border: 1px dashed hsl($color-primary, $color-saturation, 50%);
+$bold: 600;

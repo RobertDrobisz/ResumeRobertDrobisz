@@ -1,0 +1,53 @@
+@use 'sass:map';
+@use 'variables' as var;
+
+@mixin tablet {
+	@media screen and (min-width: map-get(var.$breakpoints, 'tablet')) {
+		@content;
+	}
+}
+
+@mixin laptop {
+	@media screen and (min-width: map-get(var.$breakpoints, 'laptop')) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media screen and (min-width: map-get(var.$breakpoints, 'desktop')) {
+		@content;
+	}
+}
+
+@mixin hd {
+	@media screen and (min-width: map-get(var.$breakpoints, 'hd')) {
+		@content;
+	}
+}
+
+@mixin fullhd {
+	@media screen and (min-width: map-get(var.$breakpoints, 'fullhd')) {
+		@content;
+	}
+}
+
+.l-container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: -1em;
+
+	@include laptop {
+		width: 80%;
+		margin: auto;
+	}
+
+	@include fullhd {
+		width: 1500px;
+		margin: auto;
+	}
+}
+
+.l-row {
+	flex-direction: row;
+}
